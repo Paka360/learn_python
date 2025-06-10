@@ -56,3 +56,4 @@ guests = ['stephen', 'micheal', 'kelvin', 'laura', 'kekeli', 'princess', 'lansfo
 number = str(len(guests))
 message = 'I have decided to throw a party this Saturday. I will need enough food and drinks for '+ number +' people.'
 print(message)
+
