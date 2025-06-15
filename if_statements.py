@@ -62,3 +62,19 @@ print (car == 'bugatti')
 print("\nIs car == 'toyota'? I vote False.")
 print(car == 'toyota')
 
+savings = 10 + 28 + 34 + 23
+print ('Is my savings more than 100?')
+print(savings >= 100)
+
+print('Is my savings exactly 100?')
+print(savings == 100)
+
+print('Is my savings less than 100?')
+print(savings <= 100)
+
+phones = ['samsung', 'tecno', 'iphone', 'infinix', 'huawei']
+print(phones)
+print(phones[2] == 'samsung')
+
+print(len(phones))
+print(len(phones) == 5)
