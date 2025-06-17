@@ -78,3 +78,107 @@ print(phones[2] == 'samsung')
 
 print(len(phones))
 print(len(phones) == 5)
+
+print(phones[4] == 'iphone' )
+
+ages = [23, 18, 17, 22, 20, 18, 16, 17, 19]
+print(ages)
+for age in ages:
+    if age >= 18:
+        print(age)
+        print('You are old enough to vote.\n')
+
+
+#If-else staements
+age = 16
+if age >= 18:
+    print('You are old enough to vote.')
+    print('Have you registered to vote yet?')
+else:
+    print('Sorry, you are too young to vote.')
+    print('Please register to vote as soon as you turn 18.')
+
+numbers = [33, 43, 51, 22, 28, 29,10]
+for number in numbers:
+    if number >= 30:
+        print(number)
+        print('This numbear is large enough.\n')
+    else:
+        print(number)
+        print('This number is too small.\n')
+
+#If-elif-else chain
+ages = [12, 19, 3]
+for age in ages:
+    if age < 4:
+        print("Your child's admission cost is free.\n")
+    elif age < 18:
+        print("Your child's admission cost is $10.\n")
+    else:
+        print("Your child's admission cost is $20.\n")
+
+#Alternative way of executing the code
+ages = [12, 19, 3]
+for age in ages:
+    if age < 4:
+        price = 'free'
+    elif age < 18:
+        price = '$10'
+    else:
+        price = '$20'
+    print("Your child's admission fee is " + price +'.\n')
+
+#Testing multiple conditions 
+foods = ['tea', 'oat', 'porridge', 'coffee']
+if 'tea' in foods:
+    print('I would like a cup of tea.')
+if 'coffee' in foods:
+    print('I would like a cup of coffee.')
+if 'porridge' in foods:
+    print('I would like a cup of porridge.')
+print('Here is your order.')
+
+#Practise Exercise
+alien_color = 'blue'
+
+if alien_color == 'blue':
+    print('\nYou just earned 5 points!')
+
+if alien_color == 'green':
+    print("You just earned 10 points!")
+
+car_color = 'red'
+if car_color == 'red':
+    print("This is my father's car.")
+else:
+    print("This is not my father's car. It belongs to my mom.")
+
+car_color = 'black'
+if car_color == 'red':
+    print("This is my father's car.")
+else:
+    print("This is not my father's car. It belongs to my mom.\n")
+
+alien_color = 'blue'
+if alien_color == 'blue':
+    print("You have earned 3 points!\n")
+elif alien_color == 'green':
+    print("You have earned 5 points!\n")
+elif alien_color == 'red':
+    print('You have earned 10 points!\n')
+
+alien_color = 'green'
+if alien_color == 'blue':
+    print("You have earned 3 points!\n")
+elif alien_color == 'green':
+    print("You have earned 5 points!\n")
+elif alien_color == 'red':
+    print('You have earned 10 points!\n')
+
+alien_color = 'red'
+if alien_color == 'blue':
+    print("You have earned 3 points!\n")
+elif alien_color == 'green':
+    print("You have earned 5 points!\n")
+elif alien_color == 'red':
+    print('You have earned 10 points!\n')
