@@ -182,3 +182,20 @@ elif alien_color == 'green':
     print("You have earned 5 points!\n")
 elif alien_color == 'red':
     print('You have earned 10 points!\n')
+
+age = 70
+if age < 2:
+    print ("You are a baby")
+elif age < 4:
+    print ("You are a toddler.")
+elif age < 13:
+    print ("You are a kid.")
+elif age < 18:
+    print ("You are a teenager")
+elif age < 60:
+    print ("You are an adult")
+else:
+    print ("You are an elder.")
+
+
+
