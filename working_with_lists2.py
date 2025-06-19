@@ -51,3 +51,4 @@ print(far_places)
 
 for animal in animals:
     print(animal.title())
+    

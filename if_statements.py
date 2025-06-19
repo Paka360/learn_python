@@ -195,7 +195,24 @@ elif age < 18:
 elif age < 60:
     print ("You are an adult")
 else:
-    print ("You are an elder.")
+    print ("You are an elder.\n")
 
-
-
+favorite_fruits = ['pear', 'pawpaw', 'coconut', 'orange', 'banana', 'grape']
+print (favorite_fruits)
+favorite_fruit = 'banana'
+if favorite_fruit in favorite_fruits:
+    print ("I really like "+ favorite_fruit+"s.\n")
+favorite_fruit = 'coconut'
+if favorite_fruit in favorite_fruits:
+    print ("I really like "+ favorite_fruit+"s.\n")
+favorite_fruit = 'grape'
+if favorite_fruit in favorite_fruits:
+    print ("I really like "+ favorite_fruit+"s.\n")
+    favorite_fruit = 'pear'
+if favorite_fruit in favorite_fruits:
+    print ("I really like "+ favorite_fruit+"s.\n")
+    favorite_fruit = 'watermelon'
+if favorite_fruit in favorite_fruits:
+    print ("I really like "+ favorite_fruit+"s.\n")
+if favorite_fruit in favorite_fruits:
+    print ("I really like pawpaw")
