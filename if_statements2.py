@@ -68,12 +68,14 @@ else:
     print('We need to get people to sign up!\n')
 
 current_users = ['eric', 'sarah', 'laura', 'moses', 'mike']
-new_users = ['kekeli', 'eric', 'stella', 'moses', 'hannah']
+new_users = ['kekeli', 'eric', 'stella', 'Moses', 'hannah']
+
 for new_user in new_users:
+    new_user = new_user.lower()
     if new_user in current_users:
-        print (new_user +". This username is not available. Please try a new username.\n")
+        print (new_user.lower() +". This username is not available. Please try a new username.\n")
     else:
-        print (new_user + ". This username is available.\n")
+        print (new_user.lower() + ". This username is available.\n")
 
 positions = [1,2,3,4,5,6,7,8,9]
 for position in positions:
