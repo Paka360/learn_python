@@ -38,3 +38,44 @@ else:
 
 alien_3['x-position'] = alien_3['x-position'] + x_increment
 print("New position: "+ str(alien_3['x-position']))
+
+#Removing Key-Value Pairs
+alien_0 ={'color':'red', 'points':5}
+print(alien_0)
+
+del alien_0['points']
+print(alien_0)
+
+#A Dictionary of similar objects
+favourite_languages = {
+    'john':'python',
+    'stella':'html', 
+    'phil':'c',
+    'graham':'css'
+    }
+print("Phil's favourite programming language is " + favourite_languages['phil'].title() +'.')
+
+
+#Practice Exercise
+new_friend = {
+    'firstname':'stephen', 
+    'lastname':'lang', 
+    'favourite_food':'eba', 
+    'age': 18, 
+    'city':'hong kong'
+    }
+print(new_friend['firstname'].title())
+print(new_friend['lastname'].title())
+print(new_friend['age'])
+print(new_friend['city'].title())
+print(new_friend['favourite_food'].title())
+
+names = ['jane', 'hank', 'mike', 'fred', 'hannah']
+fav_numbers = {'jane':23, 'hank':4, 'mike':10, 'fred':100, 'hannah':44,}
+
+print("Jane's favourite number is " + str(fav_numbers['jane']))
+print("Hank's favourite number is " + str(fav_numbers['hank']))
+print("Mike's favourite number is " + str(fav_numbers['mike']))
+print("Hannah's favourite number is " + str(fav_numbers['hannah']))
+print("Fred's favourite number is " + str(fav_numbers['fred']))
+
