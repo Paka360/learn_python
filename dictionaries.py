@@ -53,7 +53,8 @@ favourite_languages = {
     'phil':'c',
     'graham':'css'
     }
-print("Phil's favourite programming language is " + favourite_languages['phil'].title() +'.')
+print("Phil's favourite programming language is " + 
+      favourite_languages['phil'].title() +'.')
 
 
 #Practice Exercise
@@ -79,3 +80,76 @@ print("Mike's favourite number is " + str(fav_numbers['mike']))
 print("Hannah's favourite number is " + str(fav_numbers['hannah']))
 print("Fred's favourite number is " + str(fav_numbers['fred']))
 
+#looping through a dictionary
+#looping through all key-value pairs
+
+user_1 ={
+    'firstname':'hannah',
+    'lastname':'blay',
+    'age':'17',
+    'username':'ladyblay',
+}
+for key, value in user_1.items():
+    print('\nkey: '+ key)
+    print('value: '+ value)
+
+for name, language in favourite_languages.items():
+    print("\nname: "+ name.title())
+    print("language: "+ language.upper())
+
+#looping through all keys in a dictionary
+for name in favourite_languages.keys():
+    print('\n' + name.title())
+for name in favourite_languages:
+    print('\n' + name.title())
+
+print('\n')
+
+friends = ['stella', 'maria', 'ben', 'phil']
+for name in favourite_languages.keys():
+    print(name.title())
+    
+    if name in friends:
+        print(name.title()+ " your favourite programming language is "+
+               favourite_languages[name].upper() + '.\n')
+
+if 'eric' not in favourite_languages.keys():
+    print("\nEric, please answer the question.\n")
+    
+#looping through keys in order
+for name in sorted(favourite_languages.keys()):
+    print(name.title() +", thank you for answering the questions.\n")
+
+#looping through all values in a dictionary
+fav_books ={
+    'stella':'calculus',
+    'amin':'forth wing',
+    'claudia':'psycology of money',
+    'sarkodie': 'elcetrical machines',
+    'jesse':'calculus',
+}
+print('\nThe following books have been selected.')
+for book in fav_books.values():
+    print(book.title())
+
+print('\n')
+#the following lines ensures you do not have a repetitive list of items in your values when looping through them
+for book in set(fav_books.values()):
+    print(book.title())
+
+#Practice Exercise
+glossary = {
+    'varaiable':'used for storing data',
+    'str':'data type for storing texts',
+    'int':'data type for storing numbers',
+    'comments':'part of the code python ignores',
+    'lists':'collection of items',
+    'elements':'items in a list',
+    'print':'gives you an output',
+    'del':'removes items in your list permanently',
+    'insert':'adds new items to a list',
+    'pop':'lets you delete an item and still have access to it'
+    }
+for glo, meaning in glossary.items():
+    print('\nglossary: ' + glo.title())
+    print('meaning: ' + meaning)
