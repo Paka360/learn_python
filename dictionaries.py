@@ -153,3 +153,72 @@ glossary = {
 for glo, meaning in glossary.items():
     print('\nglossary: ' + glo.title())
     print('meaning: ' + meaning)
+
+geography ={'ghana':'accra', 'usa':'washington dc', 'russia':'moscow', 'france':'paris'}
+for country, capital in geography.items():
+    print ('\nThe capital city of '+ country.title() + ' is ' + capital.title() +'.\n')
+
+for country in geography.keys():
+    print(country.title())
+for capital in geography.values():
+    print('\n' +capital.title())
+
+voters =['stella', 'stephen', 'enoch', 'enko', 'alberta', 'joyce', 'isaac', 'jennifer', 'pauline', 'john', 'phil', 'graham']
+fav_languages ={
+    'stella':'html',
+    'stephen':'python',
+    'alberta':'react js',
+    'john':'python', 
+    'phil':'c',
+    'graham':'css',
+    'enko':'javascipt',
+    'isaac':'rust',
+    'jennifer':'c++'
+    }
+
+for voter in voters:
+    if voter in fav_languages.keys():
+        print(voter.title() + ", thank you for voting.\n")
+    else: 
+        print(voter.title() + ', please vote for your favourite programming language.\n')
+
+#Nesting
+#A List of Dictionaries
+alien_0 = {'color':'red', 'points':1}
+alien_1 = {'color':'blue','points':2}
+alien_2 = {'color':'green','points':3}
+aliens =[alien_0, alien_1, alien_2]
+
+for alien in aliens:
+    print(alien)
+
+#A real life example code which creates a fleet of aliens
+aliens = []
+
+for alien in range(30):
+    new_alien = {'color':'green', 'points':3, 'speed':'fast'}
+    aliens.append(new_alien)
+#showing first 5 aliens
+for alien in aliens[:5]:
+    print(alien)
+print('...')
+#showing how many aliens were created
+print("The total number of aliens created: "+ str(len(aliens)))
+
+#More modifications
+aliens = []
+for alien in range(15):
+    new_alien = {'color':'red', 'points':5, 'speed':'fast'}
+    aliens.append(new_alien)
+
+for alien in aliens[0:5]:
+    if alien['color'] == 'red':
+        alien['color'] = 'yellow'
+        alien['points'] = 3
+        alien['speed'] = 'medium'
+
+for alien in aliens[3:6]:
+    print(alien)
+#There are various ways in which this program can be modified
+
+
