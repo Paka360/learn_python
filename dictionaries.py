@@ -221,4 +221,82 @@ for alien in aliens[3:6]:
     print(alien)
 #There are various ways in which this program can be modified
 
+print('\n')
+#A list in a dictionary
+pizza = {'crust':'thick', 'toppings':['mushroom', 'extra cheese'],}
+print("You have ordered a "+ pizza['crust']+ '-crust pizza with the following toppings: ' )
+for topping in pizza['toppings']:
+    print('\t'+ topping)
 
+fav_languages = {
+    'stella':['html','python'],
+    'john':['c', 'php'],
+    'mike':['javascript'],
+    'joe':['c++', 'css', 'html'],
+    }
+
+for name, languages in fav_languages.items():
+    print('\n' + name.title() + "'s favourite languages are: ")
+    for language in languages:
+        print('\t' + language.upper())
+
+fav_languages = {
+    'stella':['html','python'],
+    'john':['c', 'php'],
+    'mike':['javascript'],
+    'joe':['c++', 'css', 'html'],
+    }
+
+for name, languages in fav_languages.items():
+    if len(languages) > 1:
+        print('\n' + name.title() + "'s favourite languages are: ")
+        for language in languages:
+            print('\t' + language.upper())
+    else:
+        print('\n' + name.title() + "'s favourite language is: ")
+        for language in languages:
+            print('\t' + language.upper())
+
+
+#A dictionary in a dictionary
+users = {
+    'talons':{
+        'first':'albert',
+        'last':'owusu',
+        'location':'new york',
+    },
+    'griffon':{
+        'first':'charles',
+        'last':'hammock',
+        'location':'england',
+    },
+}
+for username, user_info in users.items():
+    print("\nUsername: "+ username)
+    fullname = user_info['first'] + ' ' + user_info['last']
+    location = user_info['location']
+    print("fullname: " + fullname.title())
+    print("location: " + location.title())
+print('\n')
+#Practice Exercise
+friend_1 = {
+    'firstname':'stephen',
+    'lastname':'musk',
+    'age':'25',
+    'city':'texas',
+}
+friend_2= {
+    'firstname':'joseph',
+    'lastname':'hammond',
+    'age':'27',
+    'city':'california',
+}
+friend_3 = {
+    'firstname':'clara',
+    'lastname':'pearson',
+    'age':'22',
+    'city':'london',
+}
+friends = [friend_1, friend_2, friend_3]
+for friend in friends:
+    print('\n' + friend['firstname'].title()+ ' '  + friend['lastname'].title() + ' is ' + friend['age'] + ' years old. The city of birth is '+ friend['city'].title() +'.')
