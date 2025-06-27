@@ -300,3 +300,22 @@ friend_3 = {
 friends = [friend_1, friend_2, friend_3]
 for friend in friends:
     print('\n' + friend['firstname'].title()+ ' '  + friend['lastname'].title() + ' is ' + friend['age'] + ' years old. The city of birth is '+ friend['city'].title() +'.')
+
+pet_1 = {
+        'name' :'archie',
+        'animal':'dog',
+        'owner':'gina',
+    }
+
+pet_2 = {'name': 'alexa',
+        'animal':'cat',
+        'owner': 'nora',
+    }
+
+pet_3 = {'name':'max',
+        'animal':'dog',
+        'owner':'jerry',
+    }
+pets = [pet_1, pet_2, pet_3,]
+for pet in pets:
+    print(pet['owner'].title() + ' has a ' + pet['animal'] + ' called ' + pet['name'].title())
