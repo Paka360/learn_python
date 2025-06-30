@@ -51,3 +51,6 @@ if ans == 0:
     print("The number " +str(number) +" is a multiple of 10.")
 else:
     print("The number " +str(number) +" is not a multiple of 10.")
+
+message = input("What is your favourite song? ")
+print(message)
