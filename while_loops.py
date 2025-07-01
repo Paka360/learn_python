@@ -1,3 +1,40 @@
+#Introduction to while loops
+current_number = 1
+while current_number < 6:
+    print(current_number)
+    current_number += 1
+
+
+prompt = "\nTell me something, and I will repeat it back to you: "
+prompt += "\nEnter 'quit' to end the program: "
+message = ""
+while message != 'quit':
+    message = input(prompt)
+    if message != 'quit':
+        print(message)
+
+#using flags
+running = True
+while running:
+    message = input(prompt)
+    if message == 'quit':
+        running = False
+    else:
+        print(message)   
+
+#Using break to exit a loop
+prompt = "\nPlease enter the name of your favourite countries: "
+prompt += "\nEnter 'quit' when done. "
+
+while True:
+    city = input(prompt)
+    if city =='quit':
+        break
+    else:
+        print("I like " + city.title() +'!' )
+
+
+
 #User input
 message = input("Tell me something and I will repeat it back to you: ")
 print(message)
@@ -54,3 +91,4 @@ else:
 
 message = input("What is your favourite song? ")
 print(message)
+
