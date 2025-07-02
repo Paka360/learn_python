@@ -33,6 +33,53 @@ while True:
     else:
         print("I like " + city.title() +'!' )
 
+#Using continue in a loop
+current_number = 0
+while current_number < 10:
+    current_number += 1
+    if current_number % 2 == 0:
+        continue
+    print(current_number)
+
+#Practice exercise
+prompt = "\nEnter the toppings you would like for your pizza please."
+prompt += "Enter 'quit' after you are done."
+
+order = ""
+while order != 'quit':
+    order = input(prompt)
+    if order != 'quit':
+        print(order.title() + " wil be added to your pizza. Thank you for patronizing!")
+
+prompt = "\nHow old are you?"
+age = ''
+flag = True
+while  flag == True:
+    age = input(prompt)
+    age = int(age)
+    if age <= 3:
+        print("You are free to enter.")
+        flag = False
+    elif age <= 12:
+        print("Your ticket will cost $10.")
+        flag = False
+    elif age > 12:
+        print("Your ticket will cost $15.") 
+        flag = False 
+
+#Using While loops with lists and dictionaries
+#Moving items from one list to another
+
+unconfirmed_users = ['alice', 'mike', 'hannah']
+confirmed_users = []
+while unconfirmed_users:
+    current_user = unconfirmed_users.pop()
+
+    print("Verifying users: " +current_user.title() )
+    confirmed_users.append(current_user)
+print("\nThe following users have been confirmed: ")
+for confirmed_user in confirmed_users:
+    print(confirmed_user.title())
 
 
 #User input
