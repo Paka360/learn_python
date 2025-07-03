@@ -86,7 +86,7 @@ for confirmed_user in confirmed_users:
 message = input("Tell me something and I will repeat it back to you: ")
 print(message)
 name = input("Please enter your name: ")
-print("Hello, "+ name + "!")
+print("Hello there, "+ name + "!")
 
 prompt = "If you tell us who youare we can personalize your messages."
 prompt += "\nWhat is your first name?"
