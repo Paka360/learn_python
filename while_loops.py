@@ -70,7 +70,7 @@ while  flag == True:
 #Using While loops with lists and dictionaries
 #Moving items from one list to another
 
-unconfirmed_users = ['alice', 'mike', 'hannah']
+unconfirmed_users = ['alice', 'mike', 'hannah', 'jane']
 confirmed_users = []
 while unconfirmed_users:
     current_user = unconfirmed_users.pop()
