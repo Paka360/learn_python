@@ -5,7 +5,7 @@ while current_number < 6:
     current_number += 1
 
 
-prompt = "\nTell me something, and I will repeat it back to you: "
+prompt = "\nTell me something nice, and I will repeat it back to you: "
 prompt += "\nEnter 'quit' to end the program: "
 message = ""
 while message != 'quit':
