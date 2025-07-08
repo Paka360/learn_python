@@ -18,12 +18,12 @@ for prime in primes:
 
 #Practice Exercise
 print('\nMenu')
-buffets = ('tea', 'coffee', 'porrige', 'milk_shake', 'soakings')
+buffets = ('tea', 'coffee', 'porrige', 'milk_shake', 'soakings', 'pudding')
 for buffet in buffets:
     print(buffet.title())
 
 buffets = ('waakye', 'fufu', 'kokonte', 'tuozaafi', 'rice')
-print('\nRevised Menu')
+print('\nRevised Menu.')
 for buffet in buffets:
     print(buffet.title())
 
