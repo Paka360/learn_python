@@ -8,7 +8,7 @@ for car in cars:
 
 destination = 'Kumasi'
 if destination != 'Accra':
-    print('You are going the wrong way.')
+    print('You are going the wrong way again.')
 
 answer = 45
 if answer != 50:
