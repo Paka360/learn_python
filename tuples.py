@@ -6,7 +6,7 @@ print(dimensions[1])
 for dimension in dimensions:
     print(dimension)
 
-primes = (3,5,7,11,13,17,19)
+primes = (3,5,7,11,13,17,19,21,23)
 print("Original Primes")
 for prime in primes:
     print(prime)
