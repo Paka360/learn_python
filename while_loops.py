@@ -1,4 +1,4 @@
-#Introduction to while loops
+'''#Introduction to while loops
 current_number = 1
 while current_number < 6:
     print(current_number)
@@ -49,9 +49,9 @@ order = ""
 while order != 'quit':
     order = input(prompt)
     if order != 'quit':
-        print(order.title() + " wil be added to your pizza. Thank you for patronizing!")
+        print(order.title() + " wil be added to your pizza. Thank you for patronizing!") '''
 
-prompt = "\nHow old are you?"
+''' prompt = "\nHow old are you?"
 age = ''
 flag = True
 while  flag == True:
@@ -75,13 +75,22 @@ confirmed_users = []
 while unconfirmed_users:
     current_user = unconfirmed_users.pop()
 
-    print("Verifying users: " +current_user.title() )
+    print("Verifying user: " +current_user.title() )
     confirmed_users.append(current_user)
 print("\nThe following users have been confirmed: ")
 for confirmed_user in confirmed_users:
-    print(confirmed_user.title())
+    print(confirmed_user.title()) '''
 
+#Removinig all istances of a specific value from a list
+pets = ['cat', 'dog', 'cat', 'pig', 'mouse', 'bird', 'cat', ]
+print(pets)
 
+while 'cat' in pets:
+    pets.remove('cat')
+
+print(pets)
+
+'''
 #User input
 message = input("Tell me something and I will repeat it back to you: ")
 print(message)
@@ -138,4 +147,48 @@ else:
 
 message = input("What is your favourite song? ")
 print(message)
+'''
+'''#filling dictionaries with user input
+responses = {}
+polling_active = True
+while polling_active:
+    name = input("\nWhat is your name? ")
+    response = input('\nWho would you like to vote for? ')
+    responses[name] = response
+    
+    repeat = input('\nPlease are you done voting? (yes/no)')
+    if repeat == 'yes':
+        polling_active = False
 
+print("\n   Poll Results    ")
+for name, response in responses.items():
+    print(name + " voted for "+ response +".")'''
+   
+#Practice Exercise
+'''food_orders = ['banku', 'rice', 'jollof', 'waakye', 'sandwich', 'pizza', 'porridge', 'turkey']
+finished_orders = []
+still_preparing = True
+while still_preparing:
+    current_dish = food_orders.pop()
+    print("\nI am currently preparing " + current_dish +'.')
+    print('\nI am all done. What is the next dish?')
+    finished_orders.append(current_dish)
+    if food_orders == []:
+        still_preparing = False
+print('\n All the orders are ready, if you hera your dish come for it.')
+for order in finished_orders:
+    print(order)'''
+
+submissions = {}
+polls_active = True
+while polls_active:
+    name = input('\nWhat is your name? ')
+    places = input('\nIf you could visit one place in the world where would it be? ')
+    submissions[name] = places
+
+    repeat = input('\nIs that the only place? (yes/no).')
+    if repeat == 'yes':
+        polls_active = False
+print('\n    Poll Results    ')
+for name, place in submissions.items():
+    print(name.title() + ' would like to visit ' + place.title() +'.')
