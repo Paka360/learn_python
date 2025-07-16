@@ -23,3 +23,11 @@ def describe_pets(animal_type, pet_name):
 describe_pets('dog', 'max')
 describe_pets('cat', 'gutus')
 describe_pets('mouse', 'jerry')
+
+def call_mom():
+    """Displaying Information about my mother"""
+    message = input("Where is your mother? ")
+    print(message)
+    print("She has gone to the market. She should be back any moment from now.")
+
+call_mom()
