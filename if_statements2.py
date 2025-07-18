@@ -67,7 +67,7 @@ if users:
 else:
     print('We need to get people to sign up!\n')
 
-current_users = ['eric', 'sarah', 'laura', 'moses', 'mike']
+current_users = ['eric', 'joe', 'sarah', 'laura', 'moses', 'mike']
 new_users = ['kekeli', 'eric', 'stella', 'Moses', 'hannah']
 
 for new_user in new_users:

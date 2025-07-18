@@ -28,6 +28,6 @@ def call_mom():
     """Displaying Information about my mother"""
     message = input("Where is your mother? ")
     print(message)
-    print("She has gone to the market. She should be back any moment from now.")
+    print("This is my number. Tell her to call me when she returns. She should be back any moment from now.")
 
 call_mom()
