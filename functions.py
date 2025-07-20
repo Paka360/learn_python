@@ -106,3 +106,63 @@ musician = get_formatted_name('king', 'promise')
 print(musician)
 artist = get_formatted_name('celine', 'dion', 'anna')
 print(artist)
+
+#Returning a dictionary
+def build_person(firstname, lastname, age =""):
+    """Return a dictionary of information about a person"""
+    person = {'first': firstname, 'last':lastname}
+    return person
+
+actor = build_person('tom', 'cruise')
+print(actor)
+
+def build_person(firstname, lastname, age =""):
+    """Return a dictionary of information about a person"""
+    person = {'first': firstname, 'last':lastname}
+    if age:
+        person['age'] = age
+    return person
+
+actor = build_person('tom', 'cruise', age = 52)
+print(actor)
+
+#Using a function with a while loop
+# def get_formatted_name(firstname, lastname):
+#     """Return a full name neatly formatted"""
+#     fullname = firstname + ' '+ lastname
+#     return fullname.title()
+
+# while True:
+#     print("\nPlease enter your name: ")
+#     print("(Enter quit when you are done)")
+
+#     f_name = input("First name: ")
+#     if f_name =="quit":
+#         break
+
+#     l_name = input("\nLast name: ")
+#     if l_name == "quit":
+#         break
+
+#     formatted_name = get_formatted_name(f_name, l_name)
+#     print("\nHello, " + formatted_name +"!") 
+
+#Practice Exercise
+def capital_towns(country, capital):
+    country = country + ", " + capital
+    return country.title()
+
+ghana = capital_towns('ghana', 'accra')
+print(ghana)
+china = capital_towns('china', 'hong kong')
+print(china)
+russia = capital_towns('russia', 'moscow')
+print(russia)
+
+def build_album(artist, title):
+    """Describing an album"""
+    album = {'art':artist, 'tit':title}
+    return album
+
+album_1 = build_album('ed sheeran', 'divide') 
+print(album_1)
