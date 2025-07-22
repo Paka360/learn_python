@@ -205,3 +205,54 @@ def greet_users(names):
 
 usernames = ['hannah', 'tyland', 'john']
 greet_users(usernames)
+
+#Modifying a list in a function
+unprinted_designs = ['iphone case', 'robot pendant', 'slippers', 'dog chain']
+completed_models = []
+
+#simulate printing each design
+while unprinted_designs:
+    current_design = unprinted_designs.pop()
+    #simulate printing a 3D print from each design
+    print("Printing model: "+ current_design)
+    #moving each design to completed_models after printing
+    completed_models.append(current_design)
+
+#Display all completed models
+print("\nThe following models have been printed:")
+for completed_model in completed_models:
+    print(completed_model)
+
+def print_models(unprinted_designs, completed_models):
+    """simulate printing each design until none is left. Move each design to completed_models after printing"""
+
+    while unprinted_designs:
+        current_design = unprinted_designs.pop()
+        print("Printing model: "+ current_design)
+        completed_models.append(current_design)
+
+def show_completed_models(completed_models):
+    """Show all the models that were printed"""
+    print("\nThe following models have been printed: ")
+    for completed_model in completed_models:
+        print(completed_model)
+
+unprinted_designs = ['iphone case', 'dog chain', 'pendant', 'slippers']
+completed_models = []
+print_models(unprinted_designs, completed_models)
+show_completed_models(completed_models)
+
+
+def introduce_magicians(magicians):
+    for magician in magicians:
+        print("\nLadies and gentlemen, please welcome "+ magician +' with a round of applause.')
+
+magicians = ['berkley', 'harry potter', 'dumbledore', 'slyterin', 'haffelpop']
+introduce_magicians(magicians)
+
+def great_magicians(magicians):
+    for magician in magicians:
+        print('\nThe Great '+ magician.title() + '!' )
+
+magicians = ['berkley', 'harry potter', 'dumbledore', 'slyterin', 'haffelpop']
+great_magicians(magicians)
