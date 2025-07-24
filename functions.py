@@ -333,3 +333,9 @@ car = build_car('toyota', 'corolla', color = 'red', owner = 'Isaac')
 print(car)
 
 
+#Storing Functions in modules
+#Importing an entire module
+
+import pizza
+pizza.make_pizza(16, 'pepperoni')
+pizza.make_pizza(12, 'mushrooms', 'sausage', 'extra cheese')
