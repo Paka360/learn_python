@@ -339,3 +339,23 @@ print(car)
 import pizza
 pizza.make_pizza(16, 'pepperoni')
 pizza.make_pizza(12, 'mushrooms', 'sausage', 'extra cheese')
+
+#Importing specific modules
+from pizza import make_pizza
+
+make_pizza(15, 'pepperoni')
+make_pizza(10, 'meat','sausage', 'onion', 'pepper')
+
+#Giving Function an Alias
+from pizza import make_pizza as mp
+mp(16, 'pepperoni')
+mp(13, 'meat','sausage', 'onion', 'pepper')
+
+#Giving a module an Alias
+import pizza as p
+
+p.make_pizza(12, 'extra cheese', 'onion', 'pepper', 'chicken')
+
+#Importing all functions in a module
+from pizza import *
+make_pizza(8, 'pepper', 'meat', 'sausage', 'chicken')
