@@ -64,3 +64,25 @@ fav_restaurant.closed()
 food_joint = Restaurant('silver lobster', 'republic hall')
 bush_canteen = Restaurant('chickenman', 'commercial area')
 
+class User():
+    """Making a model of a user"""
+
+    def __init__(self, firstname, lastname):
+        """Initializing user name"""
+        self.firstname = firstname
+        self.lastname = lastname
+
+    def describe_user(self):
+        """This describes the user"""
+        print("The user is "+ self.firstname.title() +' '+ self.lastname.title()+ "." )
+        print("He signed up in March last year.")
+
+    def greet_user(self):
+        """This greets the user"""
+        print("You are welcome "+self.firstname.title()+' '+ self.lastname.title()+'.')
+
+user_1 = User('Kelvin', 'Danquah')
+user_1.describe_user()
+user_1.greet_user()
+
+    
