@@ -130,3 +130,66 @@ my_car.read_odometer()
 #Modifying Attribute Values
 my_car.odometer_reading = 23
 my_car.read_odometer()
+
+#Using Method's to modify an attribute
+class Car():
+
+    def __init__(self, make, model, year):
+        """Initializing attributes to describe a car"""
+        self.model = model
+        self.make = make
+        self.year = year
+        self.odometer_reading = 0
+
+    def get_descriptive_name(self):
+         """Return a neatly formatted name"""
+         long_name = str(self.year)+ ' ' +self.make+ ' ' + self.model
+         return long_name.title()       
+
+    def read_odometer(self):   
+        """Print a statement showing the car's mileage."""
+        print("This car has " +str(self.odometer_reading)+ " miles on it.")
+
+    def update_odometer(self, mileage):
+        """Setting odometer value to new value"""
+        self.odometer_reading = mileage
+
+car = Car('hondai', 'corolla', 2018)
+car.update_odometer(20)
+car.read_odometer()
+
+class Car():
+
+    def __init__(self, make, model, year):
+        """Initializing attributes to describe a car"""
+        self.model = model
+        self.make = make
+        self.year = year
+        self.odometer_reading = 0
+
+    def get_descriptive_name(self):
+         """Return a neatly formatted name"""
+         long_name = str(self.year)+ ' ' +self.make+ ' ' + self.model
+         return long_name.title()       
+
+    def read_odometer(self):   
+        """Print a statement showing the car's mileage."""
+        print("This car has " +str(self.odometer_reading)+ " miles on it.")
+
+    def update_odometer(self, mileage):
+        """Setting odometer value to new value
+        reject the change if it attempts to roll the odometer back"""
+
+        if mileage >= self.odometer_reading:
+            self.odometer_reading = mileage
+        else:
+            print("You can't roll the odometer back!")
+
+our_car = Car('mercedces', 'corolla', 2020)
+our_car.update_odometer(-4)
+our_car.read_odometer()
+
+
+
+    
+        
