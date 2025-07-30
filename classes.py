@@ -189,6 +189,34 @@ our_car = Car('mercedces', 'corolla', 2020)
 our_car.update_odometer(-4)
 our_car.read_odometer()
 
+#Practice Exercise
+class Restaurant():
+
+    def __init__(self, name, dish, location):
+        """Initializing the Attributes"""
+        self.name = name
+        self.dish = dish
+        self.location = location
+
+    def open_restaurant(self):
+        """Opens the restaurant"""
+        print("We are open.")
+    
+    def describe_restaurant(self):
+        """Describes the restaurant"""
+        print("The name of the restaurant is "+ self.name + ". It is locaated at " 
+              + self.location + ". Their special dish is " + self.dish )
+        
+    def close_restaurant(self):
+        """Opens the restaurant"""
+        print("We are closed.")
+
+fav_restaurant = Restaurant('Sharwama Boiz', 'Sharwama', 'Engineering gate')
+fav_restaurant.open_restaurant()
+fav_restaurant.close_restaurant()
+fav_restaurant.describe_restaurant()
+
+
 
 
     
